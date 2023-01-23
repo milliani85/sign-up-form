@@ -54,16 +54,18 @@ table {
 
 body {
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .image-container {
-    width: 650px;
+    width: 40%;
     height: 100vh;
     position: relative; 
 }
 
 .main-image {
     width: 100%;
+    min-width: 500px;
     height: 100%;
     object-fit: cover;
 }
@@ -86,7 +88,7 @@ body {
 }
 
 div > h1 {
-    font-size: 8.5rem;
+    font-size: 9.5rem;
     color: white;
     font-family: Norse-Bold;
 }
@@ -110,6 +112,16 @@ div > h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color:rgb(248, 246, 246);
+    width: 60%;
+}
+
+.form-intro {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: -100px;
+    margin-bottom: -20px;
+    padding: 0 250px 0 50px;
 }
 
 .input-container {
@@ -119,9 +131,72 @@ div > h1 {
 }
 
 .form-inputs-container {
+    display: flex;
     margin: 65px 0 40px 0;
+    background-color: white;
+    padding: 0 0 8px 50px;
+    box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.1);
 }
 
-form > p {
-    margin-bottom: 20px;
+.form-header {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 70px 0 -70px 0;
+    background-color: white;
+    padding: 25px 0 40px 50px;
+}
+
+label, input{
+    margin: 0 50px 0 0;
+}
+
+label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgb(90, 87, 87);
+    letter-spacing: 0.05rem;
+    margin-bottom: 1px;
+}
+
+input {
+    border: 1px solid rgb(223, 220, 220);
+    border-radius: 5px;
+    padding: 5px;
+    width: 220px
+}
+
+input:focus {
+    border-color: rgb(8, 8, 177);
+    outline: none;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+input:invalid:focus {
+    border-color: red;
+    outline: none;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: 600;
+    width: 200px;
+    height: 40px;
+    background-color: #596D48;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: #323d29;
+}
+
+.button-container {
+    margin-bottom: -30px;
+    padding: 0 0 0 50px;
+}
+
+p > span {
+    color:#596D48;
+    font-weight: 600;
 }
