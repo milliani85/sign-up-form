@@ -6,4 +6,4 @@ A simple sign up form to practice HTML forms.
 
 Languages:
 
-HTML CSS JavaScript
+HTML CSS
